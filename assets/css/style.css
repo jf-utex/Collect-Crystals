@@ -1,0 +1,32 @@
+
+.container-fluid{
+
+}
+
+
+
+.jumbotron{ 
+	background-image: "assets/images.background.jpeg";  /*this call isnt working*/
+        
+}
+
+body{
+        background-color: #a2e2db;
+} 
+
+
+.panel-wins, .panel-losses{
+	background-color: orange;
+	margin-bottom: 20px;
+
+}
+
+
+
+
+
+.crystal-image{
+                height: 200px;
+                width: 200px;
+                }
+                

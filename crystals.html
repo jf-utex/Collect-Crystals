@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystal Game</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+<!-- <body background-color=orange> -->
+
+
+	<div class = "container-fluid">
+		<div class = "jumbotron vertical-center">
+			<h1> Crystals Collector!</h1>
+		</div>
+			<div class = "row">
+			<div class = "col-md-8">
+				<p>You will be given a random number at the start of the game.  There will be four crystals. By clicking on a crystal, you will add a specific number of points to your score.</p> <br>
+
+				<p>You will win the game by matching your total score to the random number provided, you lose the game if your total score goes above the target random number.</p><br>
+
+				<p>The value of each crystal is hidden from you until you click on it.</p><br>
+
+				<p>Each time the game starts, the value of the crystals will be randomly reassigned. </p>
+			</div>
+				<div class = "col-md-4">
+
+				</div>
+			</div>
+<br>
+				<div class = "col-md-8">
+					<H1> Guess This Number:   <span id="target"></span></H1>
+				</div>
+	<br>		<div class ="col-md-4">
+				</div>
+	</div>
+
+	<div id="crystals">
+		<!-- <img class = "bcrystal" src = "assets/images/crystal1.jpeg"> 
+		<img class = "crystalball" src = "assets/images/crystal3.jpeg">
+		<img class = "crystalgayle" src = "assets/images/crystal2.jpeg">
+		<img class = "crystallight" src = "assets/images/crystal4.jpeg">    WOuld like one of these to show with random value targetNumber with numberOptions printed below-->
+	</div> 
+
+	<div class="panel-buttons">	
+	
+		<div class ="col-md-3">
+					
+			<div class="panel-wins panel-default">
+
+		  		<div class="panel-body"><h4> Wins: <span id="wins"> 0 </span></h4></div>
+			</div>
+				
+			<div class="panel-losses panel-default">
+
+				<div class="panel-body"><h4> Losses: <span id="losses"> 0 </span></h4></div>
+			</div>
+		</div>
+		<div class ="col-md-9">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/crystals.js"></script>	
+</body>
+ 
+
+</html>
+
+ 
+
+<!-- Optional theme -->
+<!-- wins 
+losses
+four crystals
+random for goal
+random for each crystal
+ -->
