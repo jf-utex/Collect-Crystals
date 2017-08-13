@@ -15,18 +15,28 @@ body{
 } 
 
 
-.panel-wins, .panel-losses{
+.panel-body{
 	background-color: orange;
 	margin-bottom: 20px;
 
 }
 
+.bcrystal{
+	height: 100px;
+	width: 100px;
+}
+.crystalball{
+	height: 100px;
+	width: 100px;
+}
+.crystalgayle{
+	height: 100px;
+	width: 100px;
+}
+.crystallight{
+	height: 100px;
+	width: 100px;
+}
 
 
-
-
-.crystal-image{
-                height: 200px;
-                width: 200px;
-                }
                 
