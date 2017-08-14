@@ -16,7 +16,7 @@ document.getElementById("target").innerHTML=targetNumber;
 
 	for(var i = 0; i < numberOptions.length; i++){
 
-		var imageCrystal = getElementById("bcrystal");
+		var imageCrystal = document.getElementById("bcrystal");
 		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
 		crystals.appendChild(imageCrystal);
@@ -24,21 +24,21 @@ document.getElementById("target").innerHTML=targetNumber;
 	 }
 	for(var i = 0; i < numberOptions.length; i++){
 
-		var imageCrystal = getElementById("crystalball");
+		var imageCrystal = document.getElementById("crystalball");
 		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
 		crystals.appendChild(imageCrystal);
 	}
 	for(var i = 0; i < numberOptions.length; i++){
 
-		var imageCrystal = getElementById("crystalgayle");
+		var imageCrystal = document.getElementById("crystalgayle");
 		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
 		crystals.appendChild(imageCrystal);
 	}
 	for(var i = 0; i < numberOptions.length; i++){
 
-		var imageCrystal = getElementById("crystallight");
+		var imageCrystal = document.getElementById("crystallight");
 		// The getElementById() method returns the element that has the ID attribute with the specified value.
 		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
