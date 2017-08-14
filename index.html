@@ -17,9 +17,9 @@
 </head>
 <body>
 	<div class = "container">
-		<div class = "jumbotron vertical-center">
-			<h1><strong>Crystals Collector!</strong></h1>
-		</div>
+			<div class="jumbotron">
+				<h1><strong>Crystals Collector!</strong></h1>
+			</div>
 			<div class = "row">
 					<div class = "col-md-8">
 						<p><h2>You will be given a random number at the start of the game. There are four crystals to choose from each assigned a ramdom number that will be revealed after selecting that crystal. By clicking on a crystal, you will add a specific number of points to your score.</p> <br>
@@ -47,8 +47,6 @@
 			<div class="d-flex justify-content-center">
 				<div class ="col-md-2">
 					<img class = "bcrystal" src = "assets/images/crystal1.jpeg" value="0">
-
-					
 				</div>
 
 				<div class ="col-md-2">
@@ -66,28 +64,26 @@
 					
 				</div>
 				
-			    <!-- Would like one of these to show with random value targetNumber with numberOptions printed below -->
 		    </div>
 		</div>		
 	</div>
-				<div class="panel panel-default">
-					<div class="panel-body">
-			  			<h4> Wins: <span id="numWins"> 0 </span></h4>
-		  			</div>
-				</div>
-					
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4> Losses: <span id="numLosses"> 0 </span></h4>
-					</div>
-				</div>
 
-		</div>
-			<div class ="col-md-9">
-				
+	<div class="container-fluid">
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+		  			<h2> Wins: <span id="numWins"> 0 </span></h>
+	  			</div>
 			</div>
-		</div>
-
+		</div>	
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+		  			<h2> Losses: <span id="numLosses"> 0 </span></h2>
+	  			</div>
+  			</div>
+		</div>			
+	</div>
 		<!-- link to javascript -->
 	<script src="assets/javascript/crystals.js"></script>
 
