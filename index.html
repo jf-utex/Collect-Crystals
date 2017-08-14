@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystal Game</title>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class = "container">
+		<div class = "jumbotron vertical-center">
+			<h1>Crystals Collector!</h1>
+		</div>
+			<div class = "row">
+					<div class = "col-md-8">
+						<p>You will be given a random number at the start of the game.  There will be four crystals. By clicking on a crystal, you will add a specific number of points to your score.</p> <br>
+
+						<p>You will win the game by matching your total score to the random number provided, you lose the game if your total score is above the target random number.</p><br>
+
+						<p>The value of each crystal is hidden from you until you click on it.</p><br>
+
+						<p>Each time the game starts, the value of the crystals will be randomly reassigned.</p>
+					</div>
+				<div class = "col-md-4"></div>
+			</div>
+				<br>
+				<div class = "col-md-8">
+					<H1>Guess This Number:<span id="target"></span></H1>
+				</div>
+						
+				<div class ="col-md-4">
+				</div>
+	</div>
+	<div class = "container">
+		<div id= "crystal-image">
+			
+			<div class="row"
+				<div class ="col-md-2"><!--  where I would like my crystals to be -->
+					<img id = "bcrystal" src = "assets/images/crystal1.jpeg" value="0">
+				</div>
+
+				<div class ="col-md-2">
+					<img class = "crystalball" src = "assets/images/crystal3.jpeg" value="1">
+				</div>
+
+				<div class ="col-md-2">
+					<img class = "crystalgayle" src = "assets/images/crystal2.jpeg" value="2">
+				</div>
+
+				<div class ="col-md-2">
+					<img class = "crystallight" src = "assets/images/crystal4.jpeg" value="3">	
+				</div>
+				<div class ="col-md-4">
+					
+				</div>
+				
+			    <!-- Would like one of these to show with random value targetNumber with numberOptions printed below -->
+		    </div>
+		</div>		
+	</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+			  			<h4> Wins: <span id="numWins"> 0 </span></h4>
+		  			</div>
+				</div>
+					
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4> Losses: <span id="numLosses"> 0 </span></h4>
+					</div>
+				</div>
+
+		</div>
+			<div class ="col-md-9">
+				
+			</div>
+		</div>
+		<!-- link to javascript -->
+	<script src="assets/javascript/crystals.js"></script>
+
+</body>
+</html>
+
+ 
+
+<!-- Optional theme -->
+<!-- wins 
+losses
+four crystals
+random for each crystal
+ -->
