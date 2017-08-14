@@ -14,8 +14,10 @@ body{
 
 
 .panel-body{
+	
 	background-color: orange;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
+	padding-left: 50%;
 
 }
 

@@ -1,4 +1,4 @@
-alert ("connected");
+
 
 var targetNumber = (Math.floor(Math.random()*(120-19+1))+19);  
 // GENERATES RANDOM NUMBER FOR PLAYER GOAL  math.random generates number between 0 and 1 to get a number between 0 and ten multiply by 10, math.floor rounds down to the nearest whole number 

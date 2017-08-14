@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crystal Game</title>
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		 <script src="https://code.jquery.com/jquery-3.2.1.js"
+  			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  			crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -26,17 +29,20 @@
 				<div class = "col-md-4"></div>
 			</div>
 				<br>
+				<div class = "row">
 				<div class = "col-md-8">
-					<H1>Guess This Number:<span id="target"></span></H1>
+					<H1>Guess This Number: <span id="target"></span></H1>
+					<br>
 				</div>
 						
 				<div class ="col-md-4">
+				</div>
 				</div>
 	</div>
 	<div class = "container">
 		<div id= "crystal-image">
 			
-			<div class="row"
+			<div class="d-flex justify-content-center">
 				<div class ="col-md-2"><!--  where I would like my crystals to be -->
 					<img id = "bcrystal" src = "assets/images/crystal1.jpeg" value="0">
 				</div>
@@ -77,6 +83,7 @@
 				
 			</div>
 		</div>
+
 		<!-- link to javascript -->
 	<script src="assets/javascript/crystals.js"></script>
 
