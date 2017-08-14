@@ -3,10 +3,9 @@
 
 }
 
-.jumbotron{ 
+/*.jumbotron{ 
 	background-image: "assets/images/background.jpeg";  /*this call isnt working*/
         
-}
 
 body{
         background-color: #a2e2db;
@@ -14,7 +13,7 @@ body{
 
 
 .panel-body{
-	
+
 	background-color: orange;
 	margin-bottom: 60px;
 	padding-left: 50%;
@@ -22,20 +21,20 @@ body{
 }
 
 .bcrystal{
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 }
 .crystalball{
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 }
 .crystalgayle{
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 }
 .crystallight{
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 }
 
 
