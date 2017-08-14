@@ -3,10 +3,8 @@
 
 }
 
-
-
 .jumbotron{ 
-	background-image: "assets/images.background.jpeg";  /*this call isnt working*/
+	background-image: "assets/images/background.jpeg";  /*this call isnt working*/
         
 }
 

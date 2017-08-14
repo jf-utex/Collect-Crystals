@@ -6,52 +6,48 @@ var targetNumber = (Math.floor(Math.random()*(120-19+1))+19);
 // generates random number integers for the crystal
 var numberOptions = Array.from({length: 4}, () => Math.floor(Math.random() * 12));
 console.log(numberOptions);
- // how can I print out what the array is set to to check these numbers?
 
-// var numWins=0;
-// var numLosses=0;
-// var counter=0;
+var numWins=0;
+var numLosses=0;
+var counter=0;
 
 
 document.getElementById("target").innerHTML=targetNumber;  
 
+	for(var i = 0; i < numberOptions.length; i++){
 
+		var imageCrystal = getElementById("bcrystal");
+		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
-for(var i = 0; i < numberOptions.length; i++){
+		crystals.appendChild(imageCrystal);
+	   
+	 }
+	for(var i = 0; i < numberOptions.length; i++){
 
-	var imageCrystal = getElementById("bcrystal");
-	imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
+		var imageCrystal = getElementById("crystalball");
+		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
-	crystals.appendChild(imageCrystal);
-   
- }
-for(var i = 0; i < numberOptions.length; i++){
+		crystals.appendChild(imageCrystal);
+	}
+	for(var i = 0; i < numberOptions.length; i++){
 
-	var imageCrystal = getElementById("crystalball");
-	imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
+		var imageCrystal = getElementById("crystalgayle");
+		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
-	crystals.appendChild(imageCrystal);
-}
-for(var i = 0; i < numberOptions.length; i++){
+		crystals.appendChild(imageCrystal);
+	}
+	for(var i = 0; i < numberOptions.length; i++){
 
-	var imageCrystal = getElementById("crystalgayle");
-	imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
+		var imageCrystal = getElementById("crystallight");
+		// The getElementById() method returns the element that has the ID attribute with the specified value.
+		imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
 
-	crystals.appendChild(imageCrystal);
-}
-for(var i = 0; i < numberOptions.length; i++){
-
-	var imageCrystal = getElementById("crystallight");
-	imageCrystal.setAttribute("data-crystalvalue", numberOptions[i]);
-
-	crystals.appendChild(imageCrystal);
-}
-// loop to place individual crystal with individual random number?
-
-// var numberIndex = Math.floor(Math.random()*2);  //picks a number between 0 and almost 1 multiplies by 2
+		crystals.appendChild(imageCrystal);
+	}
 
 
 	crystal-image.on("click",function(){
+//when crystal-image is clicked, the function executes
 
 	var arrayNumber=this.getAttribute('value');
 	numberOptions[parseInt(arrayNumber)];
@@ -67,8 +63,9 @@ for(var i = 0; i < numberOptions.length; i++){
 	if(counter == targetNumber){
 		// need counter here to add number of wins to print at wins
 		alert ("You Won!");
+		console.log(targetNumber)
 		
-	}else if (counter > targetNumber){
+	} else if (counter > targetNumber){
 		 // need a counter here to add number of losses to print for losses
 			alert ("You Lose!")};
 });
