@@ -1,78 +1,105 @@
+//set base crystal value to 0 each cyrstal within an object
+var crystal = {
+  billy:
+  {
+    name: "bcrystal",
+    value: 0
+  },
+  ball:
+  {
+    name: "crystalball",
+    value: 0
+  },
+  gayle:
+  {
+    name: "crystalgayle",
+    value: 0
+  },
+  light:
+  {
+    name: "crystallight",
+    value: 0
+  }
+};
+var targetNumber = 0;
+var crystalNum = 0;
+var numWins = 3;
+var numLosses = 2;
+var counter = 8;
+var crystalValue = 0;
 
+//to get random number for each crystal
+function getRandom (){
+	var crystalNum = Math.floor((Math.random() * 12) + 1);
+	return crystalNum;
+}
+var startGame = function(){
+// GENERATES RANDOM NUMBER FOR PLAYER GOAL  math.random generates number between 0 and 1 to get a number between 0 and ten multiply by 10, math.floor rounds down to the nearest whole number
 
-var targetNumber = (Math.floor(Math.random()*(120-19+1))+19);  
-// GENERATES RANDOM NUMBER FOR PLAYER GOAL  math.random generates number between 0 and 1 to get a number between 0 and ten multiply by 10, math.floor rounds down to the nearest whole number 
+//targetNumber generates numbers from 19-120 for the player goal
+var targetNumber = (Math.floor(Math.random()*(120-19+1))+19);
 
-// generates random number integers for the crystal
-var numberOptions = Array.from({length: 4}, () => Math.floor(Math.random() * 12+1));
-console.log(numberOptions);
+	counter = 5;
+//generates random numbers for each crystalValue by calling getRandom function
+crystal.billy.value = getRandom();
+crystal.ball.value = getRandom();
+crystal.gayle.value = getRandom();
+crystal.light.value = getRandom();
 
-var numWins=0;
-var numLosses=0;
-var counter=0;
-var crystalValue=0;
+//log crystal objects with values as generated
+console.log(crystal);
 
-document.getElementById("target").innerHTML=targetNumber;  
+//prints the target number to the HTMl for user response
+// document.getElementById("target").innerHTML=targetNumber;
+// document.getElementById("your-score").innerHTML = counter;
+$("#target").html(targetNumber);
+$("#your-score").html(counter);
+console.log("target:" + targetNumber);
+}
 
-	for(var i = 0; i < numberOptions.length; i++){
+var checkWin = function(){
+	if (counter>targetNumber){
+		alert ("Sorry, you lost");
+		console.log("lost");
 
-		var imageCrystal = document.getElementById("bcrystal");
-		imageCrystal.setAttribute("crystalValue",numberOptions[i]);
+		numLosses++;
 
-		crystals.appendChild(imageCrystal);
-	   
-	 }
-	for(var i = 0; i < numberOptions.length; i++){
-
-		var imageCrystal = document.getElementById("crystalball");
-		imageCrystal.setAttribute("crystalValue",numberOptions[i]);
-
-		crystals.appendChild(imageCrystal);
+		$("#numLosses").html(numLosses);
+		console.log(numLosses);
+		startGame();
 	}
-	for(var i = 0; i < numberOptions.length; i++){
+	else if (counter === targetNumber){
+		alert ("You Won!, Good Job");
+		console.log("won");
 
-		var imageCrystal = document.getElementById("crystalgayle");
-		imageCrystal.setAttribute("crystalValue", numberOptions[i]);
+		numWins++;
 
-		crystals.appendChild(imageCrystal);
+		$("#numWins").html(numWins);
+
+		startGame();
 	}
-	for(var i = 0; i < numberOptions.length; i++){
+};
 
-		var imageCrystal = document.getElementById("crystallight");
-		// The getElementById() method returns the element that has the ID attribute with the specified value.
-		imageCrystal.setAttribute("crystalValue", numberOptions[i]);
-
-		crystals.appendChild(imageCrystal);
-	}
+var addValues = function(clickedCrystal){
+	counter += clickedCrystal.value;
 
 
-	crystal-image.on("click",function(){
-//when crystal-image is clicked, the function executes
+	$("#your-score").html(counter);
+	checkWin();
+	console.log("your score:" + counter);
 
-	var arrayNumber=this.getAttribute('value');
-	numberOptions[parseInt(arrayNumber)];
-		//grabs spot in array as assigned on html and converts string to integer.  this will need to be added to counter
-	
-	var increment = (this).attr("crystalValue"); 
-	counter += parseInt(increment);//parseInt will take a value and turn a string into an integer
-	//var increment = numberOptions[numberIndex]; //set previous line to index
+};
 
-	alert("You have accumulated " + counter + " points!");
-	
-
-	if(counter == targetNumber){
-		// need counter here to add number of wins to print at wins
-		alert ("You Won!");
-		numWins==numWins+1;
-		console.log(targetNumber)
-		
-	} else if (counter > targetNumber){
-		 // need a counter here to add number of losses to print for losses
-			numLosses==numLosses+1;
-			alert ("You Lose!")};
-
-		document.getElementById(numWins).innerHTML = (numWins);
-	document.getElementById(numLosses).innerHTML = (numLosses);	
+startGame();
+$("#bcrystal").click(function(){
+	addValues(crystal.billy);
+})
+$("#crystalball").click(function(){
+	addValues(crystal.ball);
+})
+$("#crystalgayle").click(function(){
+	addValues(crystal.gayle);
+})
+$("#crystallight").click(function(){
+	addValues(crystal.light);
 });
-
-

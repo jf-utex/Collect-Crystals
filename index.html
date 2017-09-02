@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crystal Game</title>
-		 
-		<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		 
-		 <script src="https://code.jquery.com/jquery-3.2.1.js"
-  			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  			crossorigin="anonymous"></script>
-	
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<div class = "container">
-			<div class="Jumbotron">
-				<h1>Crystals Collector!</h1>
-			</div>
-			<div class = "row">
-					<div class = "col-md-8">
-						<p><h2>You will be given a random number at the start of the game. There are four crystals to choose from each assigned a ramdom number that will be revealed after selecting that crystal. By clicking on a crystal, you will add a specific number of points to your score.</p> <br>
+	<div class="jumbotron-fluid">
+
+		<h1 class="display-3">Crystals Collector!</h1>
+
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				<h3>You will be given a random number at the start of the game. There are four crystals to choose from each assigned a ramdom number that will be revealed after selecting that crystal. By clicking on a crystal, you will add a specific number of points to your score.</p> <br>
 
 						<p>You will win the game by matching your total score to the random number provided, you lose the game if your total score is above the target random number.</p><br>
 
-						<p>Each time the game starts, the value of the crystals will be randomly reassigned.</h2></p>
-					</div>
-				<div class = "col-md-4"></div>
-			</div>
-				<br>
-				<div class = "row">
-				<div class = "col-md-8">
-					<h1>Guess This Number: <span id="target"></span></h1>
-					<br>
-				</div>
-						
-				<div class ="col-md-4">
-				</div>
-				</div>
+						<p>Each time the game starts, the value of the crystals will be randomly reassigned.</h3></p>
+		</div>
+		<div class="col-md-4"></div>
 	</div>
-	<div class = "container">
-		<div id= "crystal-image">
-			
+	<br>
+	<div class="row">
+		<div class="col-md-8">
+			<h1>Guess This Number: <span id="target"></span></h1>
+			<br>
+		</div>
+
+		<div class="col-md-4">
+		</div>
+	</div>
+	</div>
+	<div class="wrapper">
+		<div id="crystal-image">
+
 			<div class="d-flex justify-content-center">
-				<div class ="col-md-2">
-					<img id = "bcrystal" src = "assets/images/crystal1.jpeg" value="0">
+				<div class="col-md-6">
+					<img id="bcrystal" src="assets/images/crystal1.jpeg" value="0">
+					<img id="crystalball" src="assets/images/crystal3.jpeg" value="1">
+
 				</div>
 
-				<div class ="col-md-2">
-					<img id = "crystalball" src = "assets/images/crystal3.jpeg" value="1">
+				<div class="col-md-6">
+					<img id="crystalgayle" src="assets/images/crystal2.jpeg" value="2">
+					<img id="crystallight" src="assets/images/crystal4.jpeg" value="3">
 				</div>
-
-				<div class ="col-md-2">
-					<img id = "crystalgayle" src = "assets/images/crystal2.jpeg" value="2">
-				</div>
-
-				<div class ="col-md-2">
-					<img id = "crystallight" src = "assets/images/crystal4.jpeg" value="3">	
-				</div>
-				<div class ="col-md-4">
-					
-				</div>
-				
-		    </div>
-		</div>		
+			</div>
+		</div>
 	</div>
 
 	<div class="container-fluid">
 		<div class="row">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-		  			<h2> Wins: <span id="numWins"> 0 </span></h>
-	  			</div>
+					<h2> Your Current Score:<span id="your-score"> 0 </h2>
+				</div>
 			</div>
-		</div>	
+		</div>
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2> Wins: <span id="numWins"> 0 </span></h>
+  			</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 		  			<h2> Losses: <span id="numLosses"> 0 </span></h2>
-	  			</div>
-  			</div>
-		</div>			
+				</div>
+			</div>
+		</div>
 	</div>
-		<!-- link to javascript -->
+	<!-- link to javascript -->
 	<script src="assets/javascript/crystals.js"></script>
 
 </body>
+
 </html>

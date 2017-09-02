@@ -1,41 +1,31 @@
-
 body{
-   
-    background-color: #a2e2db;
-} 
 
+    background-color: #a2e2db;
+}
+.jumbotron-fluid{
+	color: yellow;
+
+}
 h1{
-	font-size: 20px; 
-    color: #445668; 
+	font-size: 20px;
+    color: #445668;
     text-transform: uppercase;
-    text-align: center; 
-    margin: 0 0 35px 0; 
+    text-align: center;
+    margin: 0 0 35px 0;
     text-shadow: 0px 1px 0px #f2f2f2;
-	
+
 }
 .container-fluid{
 
-	background-color: orange;
-	padding-left: 10%;
-
-}
-
-.bcrystal{
-	height: 150px;
-	width: 150px;
-}
-.crystalball{
-	height: 150px;
-	width: 150px;
-}
-.crystalgayle{
-	height: 150px;
-	width: 150px;
-}
-.crystallight{
-	height: 150px;
-	width: 150px;
-}
+	background-color: #a2e2db;
+	padding-left: 3%;
 
 
-                
+}
+img{
+  display:block, float: left;
+	width:100px;
+	height: 100px;
+	padding-bottom: 10%;
+  padding-left: 10%;
+}
