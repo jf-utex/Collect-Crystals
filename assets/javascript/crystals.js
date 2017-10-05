@@ -21,11 +21,10 @@ var crystal = {
     value: 0
   }
 };
-var targetNumber = 0;
 var crystalNum = 0;
-var numWins = 3;
-var numLosses = 2;
-var counter = 8;
+var numWins = 0;
+var numLosses = 0;
+var counter = 0;
 var crystalValue = 0;
 
 //to get random number for each crystal
@@ -33,13 +32,13 @@ function getRandom (){
 	var crystalNum = Math.floor((Math.random() * 12) + 1);
 	return crystalNum;
 }
-var startGame = function(){
+function startGame(){
 // GENERATES RANDOM NUMBER FOR PLAYER GOAL  math.random generates number between 0 and 1 to get a number between 0 and ten multiply by 10, math.floor rounds down to the nearest whole number
 
 //targetNumber generates numbers from 19-120 for the player goal
-var targetNumber = (Math.floor(Math.random()*(120-19+1))+19);
+ 	targetNumber = (Math.floor(Math.random()*(120-19+1))+19);
 
-	counter = 5;
+	counter = 0;
 //generates random numbers for each crystalValue by calling getRandom function
 crystal.billy.value = getRandom();
 crystal.ball.value = getRandom();
@@ -89,6 +88,8 @@ var addValues = function(clickedCrystal){
 	console.log("your score:" + counter);
 
 };
+
+targetNumber = 0
 
 startGame();
 $("#bcrystal").click(function(){
