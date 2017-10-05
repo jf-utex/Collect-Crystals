@@ -1,33 +1,69 @@
-body{
+body {
+  /*background-color: #536DDD;*/
+  background-image: url("../images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    background-color: #a2e2db;
+.jumbotron {
+  padding-top: 5%;
+  color: #C4C8DD;
+  padding-right: 6%;
+  padding-left: 6%;
+  font-family: Railway;
+  font-size: 24px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 40px;
+  color: #D0B3DD;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 35px 0;
+  /*text-shadow: 0px 1px 0px #f2f2f2;*/
+}
+
+/*.container-fluid {
+  background-color: #a2e2db;
+  padding-left: 3%;
+}*/
+
+#bcrystal{
+  margin-left: 150px;
+  height: 250px;
+}
+
+#crystalball{
+  margin-left: 80px;
+  height: 250px;
+}
+
+#crystalgayle{
+  margin-left: 80px;
+  height: 250px;
+}
+#crystallight{
+  margin-left: 80px;
+  height: 250px;
 }
 
 
-.jumbotron-fluid{
-	color: yellow;
+.img {
 
+  float: right;
+    margin: 10px 10px 10px 10px;
+  /*display: block;*/
+  /*float: left;*/
+  /*width: 75px;*/
+  /*height: 75px;*/
+  /*padding-bottom: 10%;*/
+  /*padding-left: 10%;*/
 }
-h1{
-	font-size: 20px;
-    color: #445668;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 0 35px 0;
-    text-shadow: 0px 1px 0px #f2f2f2;
 
-}
-.container-fluid{
-
-	background-color: #a2e2db;
-	padding-left: 3%;
-
-
-}
-img{
-  display:block, float: left;
-	width:100px;
-	height: 100px;
-	padding-bottom: 10%;
-  padding-left: 10%;
+.panel-body {
+  font-size: 30px;
+  color: #C4C8DD;
+  text-align: center;
 }
